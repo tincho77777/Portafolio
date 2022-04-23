@@ -348,8 +348,10 @@ ul li a:hover {
 
 .project-box {
   width: 350px;
-  /* background-color: #0077b6; */
+  height: 350px;
   margin: 20px;
+  border: 6px solid #3acfd5;
+  border-radius: 5px;
 }
 
 .project-box-image1 {
@@ -387,6 +389,7 @@ ul li a:hover {
   display: flex;
   justify-content: space-around;
   text-decoration: none;
+  margin-top: 25px;
 }
 
 .project-box-links i:hover {
@@ -487,7 +490,7 @@ ul li a:hover {
 }
 
 .contact-container .contact-icons {
-  width: 50%;
+  width: 80%;
   height: 50%;
   font-size: 50px;
   color: white;
@@ -501,6 +504,8 @@ ul li a:hover {
 .contact-container .contact-icons i:hover {
   color: #90e0ef;
 }
+
+/* Ventana Pop Up */
 
 
 /* PARA QUE SEA RESPONSIVE!!!! */
@@ -619,6 +624,11 @@ ul li a:hover {
   }
   .button-cv{
     align-items: center;
+  }
+  .contact-icons{
+    margin-right: 30px;
+    margin-left: 50px;
+    width: 100%;
   }
   /* .about-content{
     flex-direction: column;

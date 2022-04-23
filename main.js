@@ -31,6 +31,7 @@ sr.reveal ('.contact-text',{delay:200})
 sr.reveal ('.contact-icons',{delay:300})
 
 
+//Ventana Pop Up
 
 
 
