@@ -17,7 +17,7 @@ body {
   background-color: rgb(10, 10, 10);
 }
 
-.xd{
+.xd {
   font-size: 25px;
   text-align: center;
   align-items: center;
@@ -472,7 +472,7 @@ ul li a:hover {
   height: 100%;
   width: 100%;
 }
-.linea{
+.linea {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -513,6 +513,7 @@ ul li a:hover {
   gap: 10px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -524,6 +525,7 @@ ul li a:hover {
   background-color: #000;
   transition: all 0.5s ease-in-out;
   border-radius: 1rem;
+  word-wrap: break-word;
 }
 
 .card:hover {
@@ -543,7 +545,7 @@ ul li a:hover {
 }
 
 .icon {
-  stroke: #00B4D8;
+  stroke: #00b4d8;
   stroke: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
   opacity: 1;
 }
@@ -589,27 +591,24 @@ ul li a:hover {
 .main {
   font-size: 30px;
   font-weight: 600;
-  color: #00B4D8;
-  
+  color: #00b4d8;
 }
 
 .sub {
   font-size: 28px;
   font-weight: 200;
-  color: #00B4D8;
+  color: #00b4d8;
   /* background-color: #000; */
   border-radius: 5px;
 }
 
-
-
 /* PARA QUE SEA RESPONSIVE!!!! */
-@media (max-width: 991px){
-  nav{
+@media (max-width: 991px) {
+  nav {
     padding: 10px 50px;
     z-index: 1000;
   }
-  .menu{
+  .menu {
     position: fixed;
     top: 60px;
     right: 100%;
@@ -618,20 +617,20 @@ ul li a:hover {
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: black ;
+    background: black;
     transition: 0.5 ease;
     z-index: 999;
     border-top: rgba(0, 0, 0, 0.2);
   }
-  .menu.active{
+  .menu.active {
     right: 0;
   }
-  nav ul li a{
+  nav ul li a {
     font-size: 35px;
     line-height: 80px;
     color: white;
   }
-  .toggle{
+  .toggle {
     width: 40px;
     height: 40px;
     background-image: url("./img/Menu-80_icon-icons.com_57300.png");
@@ -640,87 +639,95 @@ ul li a:hover {
     background-size: 30px;
     cursor: pointer;
   }
-  .toggle.active{
+  .toggle.active {
     background-image: url("./img/close.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 25px;
     cursor: pointer;
   }
-  section{
+  section {
     padding: 80px;
   }
-  .home-text h1{
+  .home-text h1 {
     font-size: 2.5rem;
     margin-bottom: 1.8rem;
     line-height: 4rem;
   }
-  .about-content{
-    flex-wrap: wrap
+  .about-content {
+    flex-wrap: wrap;
   }
-  .about-img{
+  .about-img {
     width: 250px;
     height: 400px;
     margin-bottom: 30px;
     align-items: center;
   }
-  .social{
+  .social {
     left: 110px;
   }
-  .heading h2{
+  .heading h2 {
     font-size: 1.6rem;
   }
-  .about-text{
+  .about-text {
     width: 400px;
   }
-  .about-text h1{
+  .about-text h1 {
     font-size: 1.3rem;
   }
-  .about-text p{
+  .about-text p {
     line-height: 1.5rem;
   }
 }
 
-@media (max-width:871px){
-  section{
+@media (max-width: 871px) {
+  section {
     padding: 50px;
+  }
+  .card {
+    word-wrap: break-word;
+    height: auto;
   }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   /* section{
     padding: 20px;
   } */
+  .card {
+    word-wrap: break-word;
+    height: auto;
+  }
 }
 
 /* Para los dispositivos mas chicos */
-@media (max-width:360px){
-  section{
+@media (max-width: 360px) {
+  section {
     padding: 35px;
   }
-  #home{
+  #home {
     flex-direction: column;
   }
   /* #skills{
     pad: 35px;
   } */
-  .home-text{
+  .home-text {
     max-width: 400px;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  .home-text h1{
+  .home-text h1 {
     font-size: 2rem;
     margin-bottom: 1.8rem;
     line-height: 3rem;
   }
-  .social{
+  .social {
     margin-top: 50px;
   }
-  .button-cv{
+  .button-cv {
     align-items: center;
   }
-  .contact-icons{
+  .contact-icons {
     margin-right: 30px;
     margin-left: 50px;
     width: 100%;
@@ -728,5 +735,14 @@ ul li a:hover {
   /* .about-content{
     flex-direction: column;
   } */
-  
+
+  .card {
+    word-wrap: break-word;
+    height: auto;
+  }
+
+  .about-content{
+    justify-content: center;
+    align-items: center;
+  }
 }

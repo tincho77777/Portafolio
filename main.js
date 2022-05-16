@@ -26,6 +26,8 @@ sr.reveal ('.tecnichal-skills',{delay:200})
 sr.reveal ('.soft-skills',{delay:200})
 
 sr.reveal ('.project-container',{})
+sr.reveal ('.cards',{delay:100})
+
 
 sr.reveal ('.contact-text',{delay:200})
 sr.reveal ('.contact-icons',{delay:300})
